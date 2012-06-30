@@ -1,0 +1,13 @@
+{ "name" : "cbackend",
+  "version" : "0.3.17",
+  "description" : "C backend for HosPos",
+  "author": {
+    "Chris Dew": "chris.dew@barricane.com"
+  },
+  "main": "./build/Release/cbackend",
+  "engines": { "node": ">= 0.6.0 < 0.7.0" },
+  "scripts": { 
+    "install": "node-waf configure clean build",
+    "test": "node test/unittest.js"
+  }
+}
